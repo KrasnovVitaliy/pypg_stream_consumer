@@ -10,6 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Build package
     steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Install python packages
         run: |
           pip install poetry
