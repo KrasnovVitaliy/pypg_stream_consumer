@@ -23,5 +23,5 @@ jobs:
 
       - name: Build package
         run: |
-          ls ./
           poetry build
+          poetry publish -u ${{ secrets.PYPI_USER }} -p ${{ secrets.PYPI_PASSWORD }}
