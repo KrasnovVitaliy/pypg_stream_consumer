@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Build package
     steps:
+      - name: Install python packages
+        run: |
+          pip install poetry
+
       - name: Build package
         run: |
           poetry build
