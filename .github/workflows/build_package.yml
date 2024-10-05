@@ -1,0 +1,15 @@
+name: Build backend image
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build_package:
+    runs-on: ubuntu-latest
+    name: Build package
+    steps:
+      - name: Build package
+        run: |
+          poetry build

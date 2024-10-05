@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pypg_stream_consumer"
-version = "0.0.1"
-description = ""
+version = "0.0.2"
+description = "Python PG replica stream consumer"
 authors = ["Vitaliy Krasnov <krasnov.v.i@gmail.com>"]
 readme = "README.md"
 
