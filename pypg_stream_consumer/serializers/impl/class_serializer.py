@@ -2,8 +2,8 @@ import json  # noqa: D100
 
 import psycopg2.extras
 
-from stream_consumer.models import ReplicationMessage, ReplicationMessagePayload
-from stream_consumer.serializers.serializer_abc import SerializerABC
+from pypg_stream_consumer.models import ReplicationMessage, ReplicationMessagePayload
+from pypg_stream_consumer.serializers.serializer_abc import SerializerABC
 
 
 class ClassSerializer(SerializerABC):

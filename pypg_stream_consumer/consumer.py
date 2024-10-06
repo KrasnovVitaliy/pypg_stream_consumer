@@ -5,9 +5,9 @@ import logging
 import psycopg2
 import psycopg2.extras
 
-from stream_consumer.models import ReplicationMessagePayload  # noqa: TCH001
-from stream_consumer.serializers.factory import SerializerFactory
-from stream_consumer.serializers.serializer_abc import SerializerABC  # noqa: TCH001
+from pypg_stream_consumer.models import ReplicationMessagePayload  # noqa: TCH001
+from pypg_stream_consumer.serializers.factory import SerializerFactory
+from pypg_stream_consumer.serializers.serializer_abc import SerializerABC  # noqa: TCH001
 
 logger = logging.getLogger(__name__)
 

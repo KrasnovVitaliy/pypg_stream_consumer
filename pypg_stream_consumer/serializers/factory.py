@@ -1,7 +1,7 @@
 import logging  # noqa: D100
 
-from stream_consumer.serializers.impl.class_serializer import ClassSerializer
-from stream_consumer.serializers.serializer_abc import SerializerABC
+from pypg_stream_consumer.serializers.impl.class_serializer import ClassSerializer
+from pypg_stream_consumer.serializers.serializer_abc import SerializerABC
 
 logger = logging.getLogger(__name__)
 
