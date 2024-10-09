@@ -87,7 +87,8 @@ class PGStreamConsumer:
         if self.callback:
             if self.serializer:
                 self.callback(self.serializer.serialize(msg))
-            self.callback(msg)
+            else:
+                self.callback(msg)
 
         logger.debug("Commit LSN: %s", msg.data_start)
         msg.cursor.send_feedback(flush_lsn=msg.data_start)
